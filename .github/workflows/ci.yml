@@ -1,0 +1,11 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: uv venv && uv pip install -e '.[dev]'
+      - run: .venv/bin/pytest -q
+      - run: .venv/bin/python -m abkit.study --sims 200 --out /tmp/smoke
