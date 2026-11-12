@@ -1,0 +1,20 @@
+[project]
+name = "abkit"
+version = "0.1.0"
+description = "A/B testing toolkit: power analysis, CUPED, delta method, SRM checks and always-valid sequential tests, with a simulation study that verifies each method's error rates."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "matplotlib>=3.7"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/abkit"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

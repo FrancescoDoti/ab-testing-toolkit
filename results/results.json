@@ -1,0 +1,77 @@
+{
+  "seed": 7,
+  "peeking_null": {
+    "effect": 0.0,
+    "looks": 20,
+    "n_per_arm": 5000,
+    "sims": 10000,
+    "fixed_horizon_reject_rate": 0.0509,
+    "naive_peeking_reject_rate": 0.2509,
+    "msprt_reject_rate": 0.0072,
+    "msprt_mean_sample_when_rejecting": 2958.3333333333335
+  },
+  "peeking_effect": {
+    "effect": 0.05,
+    "looks": 20,
+    "n_per_arm": 5000,
+    "sims": 2000,
+    "fixed_horizon_reject_rate": 0.703,
+    "naive_peeking_reject_rate": 0.829,
+    "msprt_reject_rate": 0.3765,
+    "msprt_mean_sample_when_rejecting": 3319.7211155378486
+  },
+  "cuped": [
+    {
+      "rho": 0.0,
+      "variance_reduction_observed": 0.00019902870802768202,
+      "variance_reduction_theory": 0.0,
+      "adjusted_bias": 0.0017571655851479004,
+      "ci95_coverage": 0.948
+    },
+    {
+      "rho": 0.3,
+      "variance_reduction_observed": 0.09261140073879526,
+      "variance_reduction_theory": 0.09,
+      "adjusted_bias": -0.0009144661099156001,
+      "ci95_coverage": 0.9445
+    },
+    {
+      "rho": 0.5,
+      "variance_reduction_observed": 0.23604691539385858,
+      "variance_reduction_theory": 0.25,
+      "adjusted_bias": 0.00027481138181616876,
+      "ci95_coverage": 0.9525
+    },
+    {
+      "rho": 0.7,
+      "variance_reduction_observed": 0.48094789776980984,
+      "variance_reduction_theory": 0.48999999999999994,
+      "adjusted_bias": -0.0005657709028941971,
+      "ci95_coverage": 0.95
+    },
+    {
+      "rho": 0.9,
+      "variance_reduction_observed": 0.8227588755192322,
+      "variance_reduction_theory": 0.81,
+      "adjusted_bias": 0.00014675027185306194,
+      "ci95_coverage": 0.954
+    }
+  ],
+  "ratio": {
+    "sims": 1000,
+    "delta_method_ci95_coverage": 0.94,
+    "naive_session_level_ci95_coverage": 0.884
+  },
+  "power": {
+    "n_per_arm": 1570,
+    "target_power": 0.8,
+    "empirical_power": 0.796,
+    "sims": 2000
+  },
+  "srm": {
+    "false_alarm_rate": 0.0011,
+    "detection_rate_for_49.5_50.5_split": 0.4559,
+    "threshold": 0.001,
+    "sims": 10000
+  }
+}
